@@ -4,8 +4,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-
-bot = webdriver.Chrome("C:\\chromedriver\\chromedriver89.exe")
+option = webdriver.ChromeOptions()
+option.add_argument('headless')
+bot = webdriver.Chrome("C:\\chromedriver\\chromedriver89.exe" , options=option)
 
 bot.get("http://www.aniketsalve.com/")
 print("Website loaded Successfully ")
@@ -20,5 +21,6 @@ bot.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 print("Scolled down")
 time.sleep(60)
 bot.quit()
+print("blog read successfully")
 print("exit chrome")
 
