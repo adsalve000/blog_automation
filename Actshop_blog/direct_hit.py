@@ -8,7 +8,7 @@ option = webdriver.ChromeOptions()
 option.add_argument('headless')
 bot = webdriver.Chrome("C:\\chromedriver\\chromedriver89.exe",options=option)
 
-bot.get("http://www.aniketsalve.com/"
+bot.get("http://www.aniketsalve.com/")
 print("Website loaded Successfully ")
 WebDriverWait(bot, 5).until(EC.element_to_be_clickable((By.XPATH, '//*[text()="Act Shop app is a money-making machine or fraud?"]'))).click()
 print("Blog_2 opened")
