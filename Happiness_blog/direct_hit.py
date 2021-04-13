@@ -14,7 +14,7 @@ print("Blog_1 opened")
 time.sleep(60)
 WebDriverWait(bot, 5).until(EC.element_to_be_clickable((By.XPATH, '//*[text()="You don’t need to go anywhere in this world, Happiness is hidden within you."]'))).click()
 print("Reading blog")
-time.sleep(60)
+time.sleep(120)
 # Scroll down to bottom
 bot.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 print("Scolled down")
