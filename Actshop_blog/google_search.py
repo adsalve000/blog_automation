@@ -4,9 +4,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-option = webdriver.ChromeOptions()
-option.add_argument('headless')
-bot = webdriver.Chrome("C:\\chromedriver\\chromedriver89.exe",options=option)
+#option = webdriver.ChromeOptions()
+#option.add_argument('headless')
+bot = webdriver.Chrome("C:\\chromedriver\\chromedriver89.exe")
+bot.set_window_position(-10000,0)
 print("Google loaded Successfully")
 bot.get("https://www.google.com/")
 print("Searching aniket happiness blog")
